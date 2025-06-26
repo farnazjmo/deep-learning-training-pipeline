@@ -44,9 +44,7 @@ The goal of this project was to build and train a deep learning model using a cl
 ├── grader/  
 │   ├── grader.py       # Evaluation and scoring tools  
 │   └── tests.py        # Automated test cases  
-├── requirements.txt    # Environment dependencies  
-├── viz.png             # Output visualization  
-├── bundle.py           # Packaging script (if needed)  
+├── requirements.txt    # Environment dependencies    
 └── README.md           # This file
 
 ## 🧪 How to Run
