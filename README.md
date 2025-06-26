@@ -47,7 +47,7 @@ The goal of this project was to build and train a deep learning model using a cl
 ├── requirements.txt    # Environment dependencies    
 └── README.md           # This file
 
-## 🧪 How to Run
+## 🔧 How to Run
 Install the requirements:
 
 pip install -r requirements.txt
