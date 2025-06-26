@@ -35,7 +35,8 @@ def train(
     log_dir = Path(exp_dir) / f"{model_name}_{datetime.now().strftime('%m%d_%H%M%S')}"
     logger = tb.SummaryWriter(log_dir)
 
-    # note: the grader uses default kwargs, you'll have to bake them in for the final submission
+    # Default values for keyword arguments should be defined explicitly in the model constructor
+    # to ensure consistent behavior during initialization and evaluation.
     model = load_model(model_name, **kwargs)
     model = model.to(device)
     model.train()
@@ -64,7 +65,7 @@ def train(
         for img, label in train_data:
             img, label = img.to(device), label.to(device)
 
-            # TODO: implement training step
+            # implement training step
             output = model(img)
 
             loss = loss_func(output, label)
@@ -96,7 +97,7 @@ def train(
             for img, label in val_data:
                 img, label = img.to(device), label.to(device)
 
-                # TODO: compute validation accuracy
+                # compute validation accuracy
                 output = model(img)
                 preds = output.argmax(dim=1)
                 val_correct += (preds == label).sum().item()
