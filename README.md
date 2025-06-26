@@ -2,7 +2,7 @@
 This project implements a modular deep learning training pipeline, developed as part of a graduate-level course on deep learning. It demonstrates practical skills in model training, logging, evaluation, and code organization using PyTorch.
 
 
-## 🧠 Project Overview
+## 📘 Project Overview
 The goal of this project was to build and train a deep learning model using a clean, reusable codebase. Key components include:
 
 - Model definition with PyTorch
